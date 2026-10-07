@@ -1,0 +1,4 @@
+'use client';
+import {useState} from 'react';
+import {Mark} from './brand';
+export function Core(){const [connected,setConnected]=useState(false);return <div className={`core-visual ${connected?'connected':''}`}><div className="orbit outer"/><div className="orbit inner"/><div className="core-line one"/><div className="core-line two"/><span className="core-node node-a">Websites</span><span className="core-node node-b">People</span><span className="core-node node-c">Operations</span><span className="core-node node-d">Data</span><button type="button" className="core-button" onClick={()=>setConnected(!connected)} aria-pressed={connected} aria-label={connected?'Separate the illustrated systems':'Connect the illustrated systems'}><Mark/></button><p className="core-caption" aria-live="polite">{connected?'Systems connected':'Your systems, connected.'}</p><span className="core-instruction">SELECT THE CORE</span></div>}

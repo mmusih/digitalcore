@@ -1,0 +1,2 @@
+export function Mark({className=''}:{className?:string}) { return <svg className={`brand-mark ${className}`} viewBox="0 0 64 64" fill="currentColor" aria-hidden="true"><path d="M25 8H14L3 32l11 24h11L14 32 25 8Z"/><path d="M39 8h11l11 24-11 24H39l11-24L39 8Z"/><path d="m32 21 11 11-11 11-11-11 11-11Z"/></svg> }
+export function Brand(){return <span className="brand"><Mark/><span>digitalcore<small>BUSINESS SYSTEMS</small></span></span>}
