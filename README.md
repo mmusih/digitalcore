@@ -4,7 +4,7 @@ Deploy this folder, not the Laravel project one directory above it.
 
 ## Runtime
 
-Next.js 16.3.4, React 19.2.6, TypeScript, Tailwind CSS 4 and Radix UI, matching the club project's core stack. Standard Node.js server; Node 24 recommended. No Sites or Cloudflare account is required.
+Next.js 16.3.8, React 19.2.6, TypeScript, Tailwind CSS 4 and Radix UI, matching the club project's core stack. Standard Node.js server; Node 24 recommended. No Sites or Cloudflare account is required.
 
 This is a public marketing site with static, server-rendered pages. Enquiries use direct phone and email links, not a submitted website form. It has no admin login and requires no database, SMTP credentials or migration. MySQL/Drizzle can be added when there is a database-backed feature to store or manage; unused database dependencies are not included.
 

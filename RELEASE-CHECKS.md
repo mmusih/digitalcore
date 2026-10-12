@@ -1,5 +1,15 @@
 # Release checks — 7 October 2026
 
+## Security patch — 12 October 2026
+
+- Upgraded Next.js from 16.3.4 to 16.3.8 and updated the lockfile. The patch for GHSA-vcvr-r3jv-pc5j starts at 16.3.6.
+- Application source has no `next/og` / `ImageResponse` usage. Social sharing uses a pre-generated static PNG, so the advisory's attacker-controlled SVG image-generation path was not found.
+- Production build and TypeScript passed on 16.3.8.
+- All 16 pages, metadata, business schema, internal links, sitemap, robots, permanent redirects, 404 response and brand assets passed the existing release checks.
+- `npm audit --omit=dev` reported zero known production dependency vulnerabilities at verification time.
+- Recreated the Hostinger ZIP with the patched dependency and lockfile. Hostinger must build and deploy this revision to update the live application; pushing source alone does not verify live deployment.
+- Advisory: https://github.com/vercel/next.js/security/advisories/GHSA-vcvr-r3jv-pc5j
+
 ## Passed locally
 
 - Next.js production build, including TypeScript and prerendering.
